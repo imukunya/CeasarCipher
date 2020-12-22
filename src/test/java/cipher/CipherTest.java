@@ -1,12 +1,21 @@
 package cipher;
 
-import junit.framework.TestCase;
-import org.junit.Test;
+import org.junit.*;
+import static org.junit.Assert.*;
 
-public class CipherTest extends TestCase {
 
+public class CipherTest {
+
+//    check if the function returns characters from an input string
     @Test
-    public void convertToChars_ConvertingStringToCharacters_Char(){
+    public void convertToCharArray_ConvertingStringToCharacterArray_char(){
+        Cipher ceasarCipher = new Cipher();
+        String testString = "Test String";
+
+        char[] testArray = testString.toCharArray();
+        Class testType = testArray.getClass();
+        Class sampleType = (ceasarCipher.convertToCharArray(testString)).getClass();
+        assertSame(testType,sampleType);
 
     }
 
