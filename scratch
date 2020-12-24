@@ -1,0 +1,7 @@
+Compiling and Running Programs
+Before we can actually run this (or any) program, we have to complete two steps. In the last lesson, we used the command $ javac Hello.java && java Hello to run our program. These are actually two separate commands, strung together with &&:
+
+The javac Hello.java command is compiling our code.
+Then, the java Hello command runs the compiled code in the Java Runtime Environment.
+---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
